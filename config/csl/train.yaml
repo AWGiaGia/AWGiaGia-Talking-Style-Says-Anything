@@ -4,8 +4,8 @@ n_extracts: 10
 device: cuda:3
 face_backbone: wide_resnet50_2
 fix_backbone: True
-train_data_toot: /ljw/Main/PoseSync/datasets/train
-val_data_root: /ljw/Main/PoseSync/datasets/train
+train_data_toot: 
+val_data_root: 
 real_sample_only: True
 is_train: True
 pos_neg_rate: 0.5
