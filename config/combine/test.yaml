@@ -1,0 +1,14 @@
+name: test1
+window_len: 5
+n_extracts: 10
+device: cuda:1
+face_backbone: wide_resnet50_2
+test_data_root: /ljw/Main/PoseSync/datasets/TalkLip
+checkpoint: /ljw/Main/CSL/weight/tem/train_tem2/ep60.pth
+seed: 114514
+batch_size: 32
+num_workers: 4
+confidence: 0.5
+positional_encoding: True
+not_linear: True
+scale_error: True

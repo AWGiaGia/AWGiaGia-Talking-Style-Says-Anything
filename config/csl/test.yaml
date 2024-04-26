@@ -1,0 +1,13 @@
+name: test1
+window_len: 5
+n_extracts: 10
+device: cuda:2
+face_backbone: wide_resnet50_2
+test_data_root: /ljw/Main/Datas/datasets/MakeItTalk
+is_train: False
+checkpoint: /ljw/Main/CSL/weight/csl/train_csl/ep20.pth
+seed: 114514
+batch_size: 4
+num_workers: 0
+confidence: 0.5
+positional_encoding: True

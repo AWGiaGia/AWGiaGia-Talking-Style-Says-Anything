@@ -1,0 +1,20 @@
+name: self_supervised
+window_len: 5
+n_extracts: 10
+device: cuda:3
+face_backbone: wide_resnet50_2
+fix_backbone: True
+train_data_toot: /ljw/Main/PoseSync/datasets/train
+val_data_root: /ljw/Main/PoseSync/datasets/train
+real_sample_only: True
+is_train: True
+pos_neg_rate: 0.5
+pretrained_ckpt:
+lr: 1.0e-5
+seed: 114514
+batch_size: 32
+num_workers: 4
+margin: 0.5
+epochs: 64
+val_gap: 5
+positional_encoding: True
